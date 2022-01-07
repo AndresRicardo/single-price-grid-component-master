@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root{
+    --size-Mobile: 375px;
+    --size-Desktop: 1440px;
+    --size-Font-size: 16px;
+    --color-Cyan: #4ABEBD;
+    --color-Bright-Yellow: hsl(71, 73%, 54%);
+    --color-Light-Gray: hsl(204, 43%, 93%);
+    --color-Grayish-Blue: #4ABEBD;;
+    --color-texto-opaco: rgba(255, 255, 255, 0.5);
+    --font-family: "Karla";
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--color-Light-Gray);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 7% 7%;
+}
+
+.article{
+    font-family: 'Karla', sans-serif;
+    width: 100%;
+    padding: 2% 7%;
+}
+
+/*##########   ARTICLES    ##########*/
+.article *{
+    margin: 6% 0px;
+}
+/*##########   ARTICLE-1    ##########*/
+#article-1{
+    background-color: white;
+}
+#article-1 .title{
+    color: var(--color-Cyan);
+    font-size: 1.5em;
+}
+#article-1 .subtitle{
+    color: var(--color-Bright-Yellow);
+    font-size: 1em;
+}
+#article-1 .text{
+    color: hsl(218, 22%, 67%);
+    line-height: 1.6em;
+}
+
+/*##########   ARTICLE-2    ##########*/
+#article-2{
+    background-color: #2BB3B1;
+}
+#article-2 .title{
+    color: white;
+    font-size: 1.5em;
+}
+#article-2 .subtitle{
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    height: fit-content;
+}
+#article-2 .subtitle .value{
+    font-size: 3em;
+    margin: 0px;
+    padding: 0px;
+}
+#article-2 .subtitle .frequency{
+    margin-left: 1em;
+    color: var(--color-texto-opaco);
+}
+#article-2 .text{
+    color: white;
+    line-height: 1.6em;
+}
+#article-2 .button{
+    width: 100%;
+    padding: 1em;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #999;
+    background-color: var(--color-Bright-Yellow);
+    color: white;
+    font-weight: 700;
+}
+
+/*##########   ARTICLE-3    ##########*/
+#article-3{
+    color: white;
+    background-color: var(--color-Cyan);
+}
+#article-3 .title{
+    font-size: 1.5em;
+}
+
+#article-3 .list{
+    list-style: none;
+    color: var(--color-texto-opaco);
+    line-height: 0.5em;
+}
