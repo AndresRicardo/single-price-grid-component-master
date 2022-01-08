@@ -103,6 +103,9 @@ body{
     color: white;
     font-weight: 700;
 }
+#article-2 .button:active{
+    box-shadow: inset 3px 3px 10px #999;
+}
 
 /*##########   ARTICLE-3    ##########*/
 #article-3{
@@ -116,5 +119,59 @@ body{
 #article-3 .list{
     list-style: none;
     color: var(--color-texto-opaco);
-    line-height: 0.5em;
+    line-height: 0.7em;
+}
+
+footer{
+    margin-top: auto;
+}
+
+/*##################   MEDIA QUERY    ##################*/
+
+@media screen and (orientation:landscape) and (min-width: 375px){
+    .container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: auto;
+        width: 44%;
+        padding: 0px 0px;
+    }
+
+    .article{
+        /* font-family: 'Karla', sans-serif; */
+        width: auto;
+        /* padding: 2% 7%; */
+    }
+
+    /*##########   ARTICLE-1    ##########*/
+    #article-1{
+        background-color: white;
+        width: 100%;
+    }
+    #article-1 .title{
+        color: var(--color-Cyan);
+        font-size: 1.5em;
+    }
+
+    /*##########   ARTICLE-2    ##########*/
+    #article-2{
+        flex: 50;
+        align-self: stretch;
+    }
+
+    /*##########   ARTICLE-3    ##########*/
+    #article-3{
+        flex:50;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    footer{
+        margin-top: auto;
+        align-self: flex-start;
+    }
 }
