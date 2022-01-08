@@ -50,6 +50,7 @@ body{
 /*##########   ARTICLE-1    ##########*/
 #article-1{
     background-color: white;
+    border-radius: 0.7em 0.7em 0em 0em;
 }
 #article-1 .title{
     color: var(--color-Cyan);
@@ -67,6 +68,8 @@ body{
 /*##########   ARTICLE-2    ##########*/
 #article-2{
     background-color: #2BB3B1;
+    border-radius: 0em 0em 0em 0em;
+
 }
 #article-2 .title{
     color: white;
@@ -111,6 +114,7 @@ body{
 #article-3{
     color: white;
     background-color: var(--color-Cyan);
+    border-radius: 0em 0em 0.7em 0.7em;
 }
 #article-3 .title{
     font-size: 1.5em;
@@ -134,19 +138,23 @@ footer{
         flex-wrap: wrap;
         justify-content: center;
         margin-top: auto;
-        width: 44%;
+        width: 50%;
         padding: 0px 0px;
     }
 
+    /*##########   ARTICLES    ##########*/
+    .article *{
+        margin: 3% 0px;
+    }
+
     .article{
-        /* font-family: 'Karla', sans-serif; */
         width: auto;
-        /* padding: 2% 7%; */
     }
 
     /*##########   ARTICLE-1    ##########*/
     #article-1{
         background-color: white;
+        border-radius: 0.7em 0.7em 0em 0em;
         width: 100%;
     }
     #article-1 .title{
@@ -158,6 +166,7 @@ footer{
     #article-2{
         flex: 50;
         align-self: stretch;
+        border-radius: 0em 0em 0em 0.7em;
     }
 
     /*##########   ARTICLE-3    ##########*/
@@ -168,6 +177,7 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+        border-radius: 0em 0em 0.7em 0em;
     }
 
     footer{
